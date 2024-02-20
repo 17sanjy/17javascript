@@ -15,3 +15,23 @@ There are 8 types of data in js among those 7 are premitive data Types.
 
 8. Object // Non-Premitive
 */
+
+// let value = 24;
+// let negValue = -value;
+// console.log(negValue);
+
+let x = 3;
+const y = x++;
+
+console.log(`x:${x}, y:${y}`);
+// Expected output: "x:4, y:3"
+
+let a = 3;
+const b = ++a;
+
+console.log(`a:${a}, b:${b}`);
+// Expected output: "a:4, b:4"
+
+// If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.
+
+// If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing.
