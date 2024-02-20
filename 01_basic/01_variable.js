@@ -5,6 +5,7 @@ const userId = 1234;
 var emailId = "jai@mahakal.com";
 
 // it has block scope and the value can be changed.
+// let declaration declares reassignable, redeclarable block scoped local variable.
 let userPassword = "12347890";
 userPassword = "2222222"
 
