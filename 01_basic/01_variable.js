@@ -17,4 +17,5 @@ placeToworship = "Mandir";
 let humanity;
 
 console.table([userId, emailId, userPassword, placeToworship, humanity]);
+// please notice the [] brackes after table  function
 
