@@ -22,5 +22,20 @@ let newArr = [1, 2, 3 , 4, 5, 6, 7];
 // arr.unshift(22);
 // arr.shift();
 // arr.shift();
-console.log(arr);
-console.log(newArr.join()); // return string with values
+// console.log(arr);
+// console.log(newArr.join()); // return string with values
+
+// slice and splice
+/* slice: it takes two parameters first is to point the index at where to start performing
+second is at what index you want to go but not included.
+slice creates new array and does not change the original array.
+
+Splice: It return the new array but also manipulate the older array with leftover value that
+is left when the new array created*/
+
+let slice = arr.slice(-4, -2);
+// console.log(slice);
+
+let splice = arr.splice(2,3);
+console.log(arr); //[ 1, 2, 6, 7, 8 ]
+console.log(splice); // [ 3, 4, 5 ]
