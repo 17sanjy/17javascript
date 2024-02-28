@@ -25,6 +25,19 @@ let userMe = {
 // console.log(userMe[mySym]);
 // console.log(userMe);
 
-Object.freeze(userMe); // it will freeze the object and cannot be altered afterwards.
+// Object.freeze(userMe); // it will freeze the object and cannot be altered afterwards.
 userMe.name = "Spiderman"
-console.log(userMe);
+// console.log(userMe);
+
+userMe.greeting = function() {
+    console.log("something");
+}
+
+userMe.greeting();
+
+userMe.greetingTwo = function() {
+    console.log(`My Name is ${this.name} and age is: ${this.age}`);
+}
+userMe.greetingTwo();
+
+// this indicates same object reference.
