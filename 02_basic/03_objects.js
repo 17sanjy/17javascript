@@ -3,11 +3,28 @@ a class that can be acccessed globally. hwn we create an object with contrictor 
 singleton can be utilized that solves commonly problems to all components. If we create 
 object with object literal then we cannot define singleton. */
 
+
+const mySym = Symbol("Jaysan");
+const str = "jam"
+
 let userMe = {
     name: "Ironman",
     age: 24,
+    [mySym]: "Hayword",
+    "full Name" : "salar kumar singh",
     email: "ironman@marvel.com",
     location: "New York",
     isLoggedIn: true,
-    lastLoginDays: ["Monday", "Tuesday"]
+    lastLoginDays: ["Monday", "Tuesday"],
+    [str]: "somejay"
 }
+
+// console.log((userMe.name));
+// console.log((userMe["age"]));
+// console.log(userMe["full Name"]);
+// console.log(userMe[mySym]);
+// console.log(userMe);
+
+Object.freeze(userMe); // it will freeze the object and cannot be altered afterwards.
+userMe.name = "Spiderman"
+console.log(userMe);
