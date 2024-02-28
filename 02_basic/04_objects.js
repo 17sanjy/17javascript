@@ -28,7 +28,27 @@ const obj3 = { ...obj1, ...obj2};
 
 // console.log(obj3);
 
-console.log(Object.keys(zehrUser)); // return only keys of the object
-console.log(Object.values(zehrUser)); //return only values
+// console.log(Object.keys(zehrUser)); // return only keys of the object
+// console.log(Object.values(zehrUser)); //return only values
 
-console.log(zehrUser.hasOwnProperty('email')); // to check if key exist or not
+// console.log(zehrUser.hasOwnProperty('email')); // to check if key exist or not
+
+
+// de-structuring of objects
+
+const school = {
+    name: "GGPS",
+    course: "PCM",
+    fee: 1000
+}
+
+ const {name, course, fee} = school;
+console.log(fee); // donot need to use dot operator everytime
+
+// json javascript object notation, the api response comes in json format only
+// we need to put quotation on both ket and value pairs
+
+// {
+//     "name": "Mogo",
+//     "isLogggedIn": true
+// }
