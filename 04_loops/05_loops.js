@@ -30,3 +30,6 @@ const myState = [
 myState.forEach((state) => {
     console.log(state.Capital);
 })
+
+// Note: for-each does not return anything but undefined. To overcome this we have various
+//... ways to loop over an array or array of objects like filter, map, reduce.
